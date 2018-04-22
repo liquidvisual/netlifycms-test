@@ -1,0 +1,101 @@
+---
+layout: base
+---
+
+{% assign settings = site.data.settings %}
+
+{% include hero.html %}
+
+<!-- ABOUT US -->
+<section id="about-us" class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>Who We Are</h2>
+				<p>CJH Constructions PTY LTD is a family owned local business in <strong>Campbelltown</strong> who offer a full range of top tier construction and carpentry services from decks and pergolas to carports, walls and home renovations at competitive rates.</p>
+				<br>
+				<h3>Our Mission</h3>
+				<p>Our main mission is to refresh tired homes, using modern-day practices with a wealth of local knowledge to bring your home into the 21st century. We add immense value to your greatest investment, and we do it right.</p>
+			</div>
+			<div class="spacer mb-4 hidden-md-up"></div>
+			<div class="col-md-4 offset-md-1">
+				<h3><i class="fa fa-clock-o"></i> Trading Hours</h3>
+				<p class="lead">
+					<strong>MON - FRI:</strong> 7am - 5pm<br>
+					<strong>SAT:</strong> 9am - 4pm<br>
+					<strong>SUN:</strong> 10am - 4pm<br>
+				</p>
+				<br>
+				{% include snippets/social_media.html %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section section-lightest">
+	<div class="container">
+		<h2 class="mb-5 text-center">Our Specialty Services</h2>
+		<div class="row">
+			<div class="col-lg-4 px-lg-4">
+
+				<!-- DECKS -->
+				<a class="btn-tile mb-4" href="#decks">
+				    <img width="100%" src="/assets/img/content/decks@2x.jpg" alt="Decks">
+				    <span class="btn-tile-bg" style="background-image: url(/assets/img/content/decks@2x.jpg)"></span>
+				</a>
+				<h3>Decks</h3>
+				<p>For both new and existing homes we offer quality decks in both pine, hardwood and hybrids to give you that 'in door/out door' feeling and extra living space. Deck restoration is also available for homes that simply need some rejuvenation.</p>
+
+			</div>
+			<div class="col-lg-4 px-lg-4">
+
+				<!-- PERGOLAS -->
+				<a class="btn-tile mb-4" href="#pergolas">
+				    <img width="100%" src="/assets/img/content/pergolas@2x.jpg" alt="Decks">
+				    <span class="btn-tile-bg" style="background-image: url(/assets/img/content/pergolas@2x.jpg)"></span>
+				</a>
+				<h3>Pergolas</h3>
+				<p>We offer quality pergolas in a range of timbers and materials. Whether it's a custom built pergola to work with your existing building or repairing an existing structure we can help you select the right package for you. </p>
+
+			</div>
+			<div class="col-lg-4 px-lg-4">
+
+				<!-- INTERIOR CARPENTRY -->
+				<a class="btn-tile mb-4" href="#interior-carpentry">
+				    <img width="100%" src="/assets/img/content/interior-carpentry@2x.jpg" alt="Decks">
+				    <span class="btn-tile-bg" style="background-image: url(/assets/img/content/interior-carpentry@2x.jpg)"></span>
+				</a>
+				<h3>Interior Carpentry</h3>
+				<p>Create open plan living in your existing home by removing or relocating walls. Freshen up and modernize your interiors with an inexpensive upgrade to doors, skirting, architraves and fixings. We can help you select a package that is right for you. </p>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+{% include sections/locations.html %}
+
+<!-- GALLERY -->
+<section id="gallery" class="section" hidden>
+	<div class="container">
+		<h2 class="text-center mb-5">Gallery</h2>
+		<ul class="block-grid-md-2 block-grid-lg-4">
+			{% for i in (1..6) %}
+				<li><img width="100%" src="/assets/img/content/gallery-{{i}}.jpg" alt="Gallery"></li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section has-image-bg inverse has-fixed-bg" style="background-image: url(/assets/img/content/hero/hero-1.jpg)">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8 col-lg-6 col-xl-5">
+				<h2 class="text-center mb-5">Need a job done?<br> Get a quick <i>free</i> quote today.</h2>
+				{% include snippets/form_basic.html %}
+			</div>
+		</div>
+	</div>
+</section>

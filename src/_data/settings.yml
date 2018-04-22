@@ -1,0 +1,80 @@
+# GLOBAL SITE SETTINGS
+
+cname: cjhconstructions.com.au
+
+# META
+title: CJH Constructions
+title_homepage: Construction and Carpentry Services in Campbelltown - Book Today!
+company: CJH Constructions Pty Ltd
+description: We specialise in new decks, deck restoration, pergolas, walls and fixings across Campbelltown and Greater Western Sydney. Get a free quote today.
+
+# SITE DEFAULTS
+site_tagline:
+
+# DEVELOPER
+allow_robots: true
+github_repo_owner: liquidvisual
+github_repo_path: https://github.com/liquidvisual/cjhconst-0717
+github_repo_name:
+jekyll_version: 3.5.0
+
+# OFFICES
+offices:
+  - title: Campbelltown
+    address: 7 Davy Place, St Helens Park 2560
+    phone: 0432 127 272
+    email: enquiries@cjhconstructions.com.au
+
+# CAMPBELLTOWN SUBURBS
+# https://en.wikipedia.org/wiki/City_of_Campbelltown_(New_South_Wales)
+campbelltown_suburbs:
+  - title: Airds
+  - title: Ambarvale
+  - title: Blair Athol
+  - title: Blairmount
+  - title: Bow Bowing
+  - title: Bradbury
+  - title: Campbelltown
+  - title: Claymore
+  - title: Denham Court
+  - title: Eagle Vale
+  - title: Englorie Park
+  - title: Eschol Park
+  - title: Gilead
+  - title: Glen Alpine
+  - title: Glenfield
+  - title: Ingleburn
+  - title: Kearns
+  - title: Kentlyn
+  - title: Leumeah
+  - title: Long Point
+  - title: Macarthur Heights
+  - title: Macquarie Fields
+  - title: Macquarie Links
+  - title: Manangle Park
+  - title: Minto
+  - title: Minto Heights
+  - title: Raby
+  - title: Rosemeadow
+  - title: Ruse
+  - title: St Andrews
+  - title: St Helens Park
+  - title: Varroville
+  - title: Wedderburn
+  - title: Woodbine
+
+# SOCIAL MEDIA
+facebook: https://www.facebook.com/cjhconstructionsptyltd/
+linked_in:
+google_plus:
+instagram: https://www.instagram.com/cjhconstructions/
+
+# GOOGLE
+google_analytics: "UA-XXXXXXXX-X"
+
+# AUTHOR
+author:
+  title: liquidvisual
+  url: http://liquidvisual.com
+  logo: /assets/img/ui/logo-liquidviual.svg
+  description: website by liquidvisual

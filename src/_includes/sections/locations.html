@@ -1,0 +1,36 @@
+{% assign settings = site.data.settings %}
+{% assign suburbs = settings.campbelltown_suburbs %}
+
+
+{% comment %}
+
+<!-- AREAS WE SERVICE -->
+<section id="areas-we-service" class="section section-areas-we-service section-split">
+	<div class="container text-center">
+		<header class="header">
+			<h2>Areas We Service</h2>
+		</header>
+		<div class="row table-row">
+			<div class="col-md-6">
+				<h3 class="mb-4">Campbelltown Region</h3>
+				<!-- <p>Blacktown, Camden, Canterbury-Bankstown, Campbelltown, Fairfield, Hawkesbury, The Hills, Inner West, Liverpool, Macarthur Region, Parramatta, Penrith and Wollondilly</p> -->
+
+				<!-- <p>The Macarthur region is located to the south-west of Sydney that includes the City of Campbelltown, Camden Council and Wollondilly Shire local government areas.</p> -->
+
+				<!-- <p> Glen Alpine, Macquarie Links, Harrington Park, Blair Athol, Mount Annan, Currans Hill, Englorie Park, Nangarin Estate </p> -->
+
+				<ul class="block-grid-xs-3">
+					{% for item in suburbs %}
+						<li>{{ item.title }}</li>
+					{% endfor %}
+				</ul>
+
+			</div>
+			<div class="col-md-6">
+				{% include snippets/google_map.html address="Campbelltown Region, NSW" %}
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endcomment %}

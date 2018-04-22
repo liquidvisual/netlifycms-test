@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: liquidvisual/cjhconst-0717 # Gulp will replace this with your GitHub repository
+  branch: master # Branch to update (master by default)
+
+media_folder: "src/assets/img/content" # Folder where user uploaded files should go
+
+collections: # A list of collections the CMS should be able to edit # update
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/_pages/home.md"
+        label: "Homepage"
+        name: "home"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Body, name: body, widget: markdown}
