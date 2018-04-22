@@ -1,8 +1,9 @@
 backend:
-  name: github
-  repo: liquidvisual/cjhconst-0717 # Gulp will replace this with your GitHub repository
+  name: git-gateway
+  repo: liquidvisual/netlifycms-test # Gulp will replace this with your GitHub repository
   branch: master # Branch to update (master by default)
 
+publish_mode: editorial_workflow
 media_folder: "src/assets/img/content" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit # update
@@ -10,8 +11,13 @@ collections: # A list of collections the CMS should be able to edit # update
     label: "Pages"
     files:
       - file: "src/_pages/home.md"
-        label: "Homepage"
         name: "home"
+        label: "Homepage"
+        # folder: "src/_pages/"
+        # create: false
+        # slug:
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Body, name: body, widget: markdown}
+          - {label: "Title", name: "title", widget: "string" }
+          - {label: "Your badass body text", name: "body", widget: "markdown" }
+          - {label: "Hero Title", name: "hero_title", widget: "string", default: "Hero Ipsum"}
+          - {label: "Hero Body", name: "hero_body", widget: "markdown" }
