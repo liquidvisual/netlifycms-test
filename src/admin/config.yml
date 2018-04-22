@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit # update
         name: "home"
         file: "src/_pages/home.md"
         editor:
-             preview: false
+          preview: false
         fields:
           - { label: "Layout", name: "layout", widget: "hidden", default: "base__homepage"}
           - { label: "Title", name: "title", widget: "string", default: "Homepage" }
