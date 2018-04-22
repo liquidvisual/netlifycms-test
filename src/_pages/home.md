@@ -1,8 +1,6 @@
 ---
-layout: base__homepage
 title: Homepage
-permalink: /
-regenerate: true
-hero_title: Your Local Construction Experts
-hero_body: Serving Campbelltown and Greater Western Sydney
+hero_title: YOU CAN DO IT
+hero_body: '## **Serving Campbelltown and Greater _Western_ Sydney**'
 ---
+wop wop
