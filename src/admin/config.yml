@@ -5,7 +5,7 @@ backend:
 
 display_url: https://jovial-davinci-0a9047.netlify.com
 media_folder: "src/assets/img/content" # Folder where user uploaded files should go
-public_folder: "assets/img/content"
+public_folder: "/assets"
 # publish_mode: editorial_workflow
 
 collections: # A list of collections the CMS should be able to edit # update
