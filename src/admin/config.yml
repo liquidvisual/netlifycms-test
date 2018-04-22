@@ -23,4 +23,4 @@ collections: # A list of collections the CMS should be able to edit # update
           - { label: "Regenerate", name: "regenerate", widget: "hidden", default: true }
           - { label: "Hero Title", name: "hero_title", widget: "string", default: "Hero Ipsum"}
           - { label: "Hero Body", name: "hero_body", widget: "markdown" }
-          - { label: "Your badass body text", name: "body", widget: "markdown", buttons: ["bold", "italic", "heading-three", "heading-four", "heading-five", "heading-six"] }
+          - { label: "Your badass body text", name: "body", widget: "markdown", buttons: ["bold", "italic", "heading-three", "heading-four", "heading-five", "heading-six", "heading-two"] }
