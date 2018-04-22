@@ -11,10 +11,14 @@ collections: # A list of collections the CMS should be able to edit # update
     name: "pages"
     files:
       - label: "Homepage"
+        delete: false
         name: "home"
         file: "src/_pages/home.md"
         fields:
-          - {label: Title, name: title, widget: string }
-          - {label: "Your badass body text", name: "body", widget: "markdown" }
-          - {label: "Hero Title", name: "hero_title", widget: "string", default: "Hero Ipsum"}
-          - {label: "Hero Body", name: "hero_body", widget: "markdown" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "base__homepage"}
+          - { label: "Title", name: "title", widget: "string", default: "Homepage" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/" }
+          - { label: "Regenerate", name: "regenerate", widget: "hidden", default: true }
+          - { label: "Hero Title", name: "hero_title", widget: "string", default: "Hero Ipsum"}
+          - { label: "Hero Body", name: "hero_body", widget: "markdown" }
+          - { label: "Your badass body text", name: "body", widget: "markdown" }
