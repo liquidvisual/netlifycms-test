@@ -5,11 +5,11 @@ permalink: /
 regenerate: true
 hero_title: hello anne
 hero_body: |-
+  ![icq](/assets/icq-chat.png)
+
   # Doing stuff and yadda yadda
 
   **wdwhello _deed_**
-
-  ![hellooooooo](/src/assets/img/content/gallery-3.jpg)
 ---
 
 woop woop body
