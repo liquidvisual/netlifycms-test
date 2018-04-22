@@ -28,7 +28,7 @@
                                 <h1 class="display-1">{{ page.hero_title }}</h1>
 
                                 <div class="wysiwyg">
-                                    {{ page.hero_body }}
+                                    {{ page.hero_body | markdownify }}
                                 </div>
                             </div>
                         </div>
