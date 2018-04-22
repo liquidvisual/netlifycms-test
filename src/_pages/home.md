@@ -5,7 +5,7 @@ permalink: /
 regenerate: true
 hero_title: hello anne
 hero_body: |-
-  ![icqqqqq](/assets/icq-chat.png)
+  ![icqu](/assets/img/content/icq-chat.png)
 
   # Doing stuff and yadda yadda
 
