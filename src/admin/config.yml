@@ -3,13 +3,13 @@ backend:
   display_url: https://jovial-davinci-0a9047.netlify.com
   repo: liquidvisual/netlifycms-test # Gulp will replace this with your GitHub repository
   branch: master # Branch to update (master by default)
-  #publish_mode: editorial_workflow
-  media_folder: "src/assets/img/content" # Folder where user uploaded files should go
-  # public_folder: "assets/img/content"
+
+#publish_mode: editorial_workflow
+media_folder: "src/assets/img/content" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit # update
-  - name: "pages"
-    label: "Pages"
+  - label: "Pages"
+    name: "pages"
     delete: false
     editor:
       preview: false
@@ -18,10 +18,10 @@ collections: # A list of collections the CMS should be able to edit # update
         name: "home"
         file: "src/_pages/home.md"
         fields:
-          - { name: "layout", label: "Layout", widget: "hidden", default: "base__homepage"}
-          - { name: "title", label: "Title", widget: "string", default: "Homepage" }
-          - { name: "permalink", label: "Permalink", widget: "hidden", default: "/" }
-          - { name: "regenerate", label: "Regenerate", widget: "hidden", default: true }
-          - { name: "hero_title", label: "Hero Title", widget: "string", default: "Hero Ipsum"}
-          - { name: "hero_body", label: "Hero Body", widget: "markdown" }
-          - { name: "body", label: "Body", widget: "markdown", buttons: ["bold", "italic", "h2", "h3", "h4", "h5", "h6"] }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "base__homepage"}
+          - { label: "Title", name: "title", widget: "string", default: "Homepage" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/" }
+          - { label: "Regenerate", name: "regenerate", widget: "hidden", default: true }
+          - { label: "Hero Title", name: "hero_title", widget: "string", default: "Hero Ipsum"}
+          - { label: "Hero Body", name: "hero_body", widget: "markdown" }
+          - { label: "Your badass body text", name: "body", widget: "markdown", buttons: ["bold", "italic", "h2", "h3", "h4", "h5", "h6"] }
