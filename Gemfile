@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'jekyll', '~>3.5.0'
+gem 'jekyll', '~>3.8.0'
 # gem 'redcarpet'
 # gem 'classifier-reborn'
 

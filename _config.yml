@@ -22,9 +22,9 @@ collections_dir: _pages
 
 # Blog
 collections:
-  user_created:
+  user_pages:
     output: true
-    permalink: /:collection/:name
+    permalink: /:name/
   posts:
     output: true
     permalink: /blog/:categories/:title/
