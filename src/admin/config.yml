@@ -15,19 +15,12 @@ collections: # A list of collections the CMS should be able to edit # update
     editor:
       preview: false
     files:
-    - name: "general"
+    - name: "settings"
       label: "Site Settings"
       file: "_data/settings.yml"
       description: "General Site Settings"
       fields:
-        - { label: "Global title", name: "title", widget: "string"}
-        - label: "Post Settings"
-          name: posts
-          widget: "object"
-          fields:
-            - { label: "Number of posts on frontpage", name: front_limit, widget: number }
-            - { label: "Default Author", name: author, widget: string }
-            - { label: "Default Thumbnail", name: thumb, widget: image, class: "thumb" }
+        - { label: "Global title", name: "title", widget: "string" }
 
   - name: "pages"
     label: "Pages"
@@ -45,4 +38,5 @@ collections: # A list of collections the CMS should be able to edit # update
           - { name: "regenerate", label: "Regenerate", widget: "hidden", default: true }
           - { name: "hero_title", label: "Hero Title", widget: "string", default: "Hero Ipsum"}
           - { name: "hero_body", label: "Hero Body", widget: "markdown" }
+          - { name: "file", label: "File", widget: "file" }
           - { name: "body", label: "Body", widget: "markdown", buttons: ["bold", "italic", "h2", "h3", "h4", "h5", "h6"] }
