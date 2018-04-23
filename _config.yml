@@ -22,7 +22,7 @@ environment: data-dev-mode
 
 # Blog
 collections:
-  collections_dir: pages
+  collections_dir: _pages
   docs:
     output: true
   posts:
