@@ -60,7 +60,7 @@ collections: # A list of collections the CMS should be able to edit # update
     fields:
       - {
         name: "layout",
-        label: "Standard Page or Advanced Page?",
+        label: "Page Layout",
         widget: "select",
         default: "base__page",
         options: [{ label: "Standard page", value: "base__page_sidebar" },{ label: "Advanced Page", value: "base__page"}] }
