@@ -18,11 +18,10 @@ future: true
 show_drafts: true
 environment: data-dev-mode
 
-
+collections_dir: _pages
 
 # Blog
 collections:
-  collections_dir: _pages
   docs:
     output: true
   posts:
