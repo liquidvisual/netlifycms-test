@@ -58,9 +58,10 @@ collections: # A list of collections the CMS should be able to edit # update
     folder: "src/_docs"
     create: true
     fields:
-      - { name: "layout", label: "Standard Page or Advanced Page?", widget: "select", options:
+      - { name: "layout", label: "Standard Page or Advanced Page?", widget: "select",
+        options:
           - { label: "Standard page", value: "base__page_sidebar" }
-      - { label: "Advanced Page", value: "base__page" } }
+          - { label: "Advanced Page", value: "base__page" } }
       - { name: "title", label: "Title", widget: "string", default: "lorem ipsum" }
       - { name: "permalink", label: "Permalink", widget: "hidden", default: "/" }
 
