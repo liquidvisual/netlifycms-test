@@ -55,6 +55,7 @@ collections: # A list of collections the CMS should be able to edit # update
     label: "Custom Pages"
     label_singular: "Custom Page"
     folder: "src/_pages/user_created"
+    slug: "{{slug}}"
     create: true
     fields:
       - {
