@@ -11,13 +11,106 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   <style>
+  		html {
+  		  height: 100%;
+  		}
+
   		body {
-  			background-color: #b19776;
-  			background-image: url(/assets/img/content/bg.png);
-			background-repeat: no-repeat;
-			background-position: center center;
-  			background-size: cover;
-  			height: 100%;
+  				 -webkit-font-smoothing: antialiased;
+  				-moz-osx-font-smoothing: grayscale;
+  				         font-smoothing: antialised;
+  			}
+
+  		.nc-appHeader-button.nc-appHeader-button-active,
+  		.nc-appHeader-button:active,
+  		.nc-appHeader-button:focus,
+  		.nc-appHeader-button:hover {
+  		  background: black;
+  		  color: white;
+  		}
+
+  		.nc-toolbar-Toolbar {
+  		  background: rgba(0,0,0,0.1);
+  		}
+
+  		.nc-controlPane-label {
+  		  background: none;//rgba(0,0,0,0.1);
+  		  border: 0;
+  		  border-radius: 0;
+  		  text-transform: none;
+  		  font-size: 14px;
+  		  font-weight: bold;
+  		  margin-bottom: 10px;
+  		}
+
+  		.nc-controlPane-label:after,
+  		.nc-controlPane-label:before {
+  		  display: none;
+  		}
+
+  		.nc-controlPane-widget {
+  		  border: 0;
+  		  box-shadow: 0 2px 5px 2px rgba(0,0,0,0.05);
+  		  border-radius: 0;
+  		  margin-bottom: 30px;
+  		}
+
+  		.nc-appHeader-button.nc-appHeader-button-active .nc-icon, .nc-appHeader-button:active .nc-icon, .nc-appHeader-button:focus .nc-icon, .nc-appHeader-button:hover .nc-icon {
+  		  color: #ef2163;
+  		}
+
+  		.nc-appHeader-main {
+  		  background: #1b1b21;
+  		}
+
+  		.nc-entryEditor-noPreviewEditorContainer {
+  		  background: #eff1f4;
+  		}
+
+  		.nc-entryListing-gridCard,
+  		.nc-collectionPage-sidebar,
+  		.nc-collectionPage-top,
+  		.nc-entryListing-listCard {
+  		  border-radius: 0;
+  		/*   background: #eff0f4; */
+  		}
+
+  		/* search  */
+  		.nc-collectionPage-sidebarSearch input {
+  		  text-align: center !important;
+  		  padding: 10px 10px;
+  		}
+
+  		/* buttons */
+  		.nc-appHeader-quickNew:focus,
+  		.nc-appHeader-quickNew {
+  		  background: #1eb5c3;
+  		  border-bottom: 2px solid #11636b;
+  		  border-radius: 3px;
+  		}
+
+  		.nc-collectionPage-sidebarLink.nc-collectionPage-sidebarLink-active,
+  		.nc-collectionPage-sidebarLink:active,
+  		.nc-collectionPage-sidebarLink:hover {
+  		  background: #eff1f4;
+  		  color: #ef2163;
+  		  border-color: #ef2163;
+  		}
+
+  		/* sidebar left #44d1de */
+  		.nc-collectionPage-sidebar {
+  		/*   padding: 15px; */
+  		}
+
+  		.nc-collectionPage-sidebarLink {
+  		  padding: 10px 15px;
+  		}
+
+  		.nc-collectionPage-sidebar input {
+  		  background: white;
+  		  border-radius: 0;
+  		  box-shadow: 0 2px 4px 2px rgba(0,0,0,0.2);
+  		  margin: 0 10px;
   		}
   </style>
 </head>
