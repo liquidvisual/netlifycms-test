@@ -1,5 +1,3 @@
-# CAMPBELLTOWN SUBURBS
-# https://en.wikipedia.org/wiki/City_of_Campbelltown_(New_South_Wales)
 suburbs:
   - title: Airds
   - title: Ambarvale
@@ -35,3 +33,4 @@ suburbs:
   - title: Varroville
   - title: Wedderburn
   - title: Woodbine
+  - title: Coachella
