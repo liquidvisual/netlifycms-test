@@ -15,30 +15,19 @@ collections: # A list of collections the CMS should be able to edit # update
     editor:
       preview: false
     files:
-      - name: "suburbs"
-        label: "Cambpbelltown Suburbs"
-        file: "_data/suburbs.yml"
-        description: "Serviceable Suburbs (for SEO)"
-        fields:
-          - name: suburbs
-            label: Suburbs
-            label_singular: "Suburb"
-            widget: list
-            fields:
-              - { name: "title", label: "Name",  widget: "string" }
-    # - name: "general"
-    #   label: "Site Settings"
-    #   file: "_data/settings.yml"
-    #   description: "General Site Settings"
-    #   fields:
-    #     - { label: "Global title", name: "site_title", widget: "string"}
-    #     - label: "Post Settings"
-    #       name: posts
-    #       widget: "object"
-    #       fields:
-    #         - { label: "Number of posts on frontpage", name: front_limit, widget: number }
-    #         - { label: "Default Author", name: author, widget: string }
-    #         - { label: "Default Thumbnail", name: thumb, widget: image, class: "thumb" }
+    - name: "general"
+      label: "Site Settings"
+      file: "_data/settings.yml"
+      description: "General Site Settings"
+      fields:
+        - { label: "Global title", name: "title", widget: "string"}
+        - label: "Post Settings"
+          name: posts
+          widget: "object"
+          fields:
+            - { label: "Number of posts on frontpage", name: front_limit, widget: number }
+            - { label: "Default Author", name: author, widget: string }
+            - { label: "Default Thumbnail", name: thumb, widget: image, class: "thumb" }
 
   - name: "pages"
     label: "Pages"
