@@ -22,6 +22,8 @@ environment: data-dev-mode
 collections:
   docs:
     output: true
+  pages:
+    output: true
   posts:
     output: true
     permalink: /blog/:categories/:title/
