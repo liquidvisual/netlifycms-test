@@ -19,13 +19,14 @@ collections: # A list of collections the CMS should be able to edit # update
       preview: false
     files:
       - name: "suburbs"
-        label: "Cambpbelltown Suburbs"
+        label: "Suburbs"
         file: "src/_data/suburbs.yml"
-        description: "Serviceable Suburbs (for SEO)"
+        description: >
+              SEO area to add your stuff
         fields:
           - name: suburbs
             label: Suburbs
-            label_singular: "Suburb"
+            label_singular: Suburbs
             widget: list
             fields:
               - { name: "title", label: "Name",  widget: "string" }
