@@ -50,9 +50,9 @@ collections: # A list of collections the CMS should be able to edit # update
           - { name: "hero_body", label: "Hero Body", widget: "markdown" }
           - { name: "body", label: "Body", widget: "markdown", buttons: ["bold", "italic", "h2", "h3", "h4", "h5", "h6"] }
 
-  - name: "pages"
-    label: "New Pages"
-    folder: "src/_pages"
+  - name: "docs"
+    label: "Docs"
+    folder: "src/_docs"
     create: true
     fields:
       - { name: "layout", label: "Layout", widget: "hidden", default: "base__homepage"}
