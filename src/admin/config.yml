@@ -65,7 +65,6 @@ collections: # A list of collections the CMS should be able to edit # update
         default: "base__page",
         options: [{ label: "Standard page", value: "base__page_sidebar" },{ label: "Advanced Page", value: "base__page"}] }
       - { name: "title", label: "Title", widget: "string", default: "lorem ipsum" }
-      - { name: "permalink", label: "Permalink", widget: "string" }
 
       # - label: "Standard Page"
       #   name: "standard_page"
