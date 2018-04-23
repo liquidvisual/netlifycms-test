@@ -52,10 +52,10 @@ collections: # A list of collections the CMS should be able to edit # update
           - { name: "hero_body", label: "Hero Body", widget: "markdown" }
           - { name: "body", label: "Body", widget: "markdown", buttons: ["bold", "italic", "h2", "h3", "h4", "h5", "h6"] }
 
-  - name: docs
-    label: Custom Pages
-    label_singular: Custom Page
-    folder: "src/_docs"
+  - name: "user_created"
+    label: "Custom Pages"
+    label_singular: "Custom Page"
+    folder: "src/_pages/user_created"
     create: true
     fields:
       - {

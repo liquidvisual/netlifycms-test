@@ -22,7 +22,7 @@ collections_dir: _pages
 
 # Blog
 collections:
-  docs:
+  user_created:
     output: true
   posts:
     output: true
