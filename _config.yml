@@ -24,6 +24,7 @@ collections_dir: _pages
 collections:
   user_created:
     output: true
+    permalink: /:title/
   posts:
     output: true
     permalink: /blog/:categories/:title/

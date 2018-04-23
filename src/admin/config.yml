@@ -42,7 +42,6 @@ collections: # A list of collections the CMS should be able to edit # update
       - label: "Homepage"
         name: "home"
         file: "src/_pages/home.md"
-        create: true
         fields:
           - { name: "layout", label: "Layout", widget: "hidden", default: "base__homepage"}
           - { name: "title", label: "Title", widget: "string", default: "Homepage" }
@@ -65,7 +64,7 @@ collections: # A list of collections the CMS should be able to edit # update
         default: "base__page",
         options: [{ label: "Standard page", value: "base__page_sidebar" },{ label: "Advanced Page", value: "base__page"}] }
       - { name: "title", label: "Title", widget: "string", default: "lorem ipsum" }
-      - { name: "permalink", label: "Permalink", widget: "hidden", default: "/" }
+      - { name: "permalink", label: "Permalink", widget: "string" }
 
       # - label: "Standard Page"
       #   name: "standard_page"
