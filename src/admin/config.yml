@@ -15,12 +15,17 @@ collections: # A list of collections the CMS should be able to edit # update
     editor:
       preview: false
     files:
-    - name: "settings"
-      label: "Site Settings"
-      file: "_data/settings.yml"
-      description: "General Site Settings"
-      fields:
-        - { label: "Global title", name: "title", widget: "string" }
+      - name: "suburbs"
+        label: "Cambpbelltown Suburbs"
+        file: "src/_data/suburbs.yml"
+        description: "Serviceable Suburbs (for SEO)"
+        fields:
+          - name: suburbs
+            label: Suburbs
+            label_singular: "Suburb"
+            widget: list
+            fields:
+              - { name: "title", label: "Name",  widget: "string" }
 
   - name: "pages"
     label: "Pages"
@@ -38,5 +43,4 @@ collections: # A list of collections the CMS should be able to edit # update
           - { name: "regenerate", label: "Regenerate", widget: "hidden", default: true }
           - { name: "hero_title", label: "Hero Title", widget: "string", default: "Hero Ipsum"}
           - { name: "hero_body", label: "Hero Body", widget: "markdown" }
-          - { name: "file", label: "File", widget: "file" }
           - { name: "body", label: "Body", widget: "markdown", buttons: ["bold", "italic", "h2", "h3", "h4", "h5", "h6"] }
