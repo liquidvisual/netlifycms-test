@@ -32,7 +32,7 @@ collections: # A list of collections the CMS should be able to edit # update
               - { name: "title", label: "Name",  widget: "string" }
 
   - name: "pages"
-    label: "Designed Pages"
+    label: "Pages"
     description: >
           These pages are pre-made and available out of the box. If you need something deleted, please ask your developer.
     delete: false
@@ -58,7 +58,9 @@ collections: # A list of collections the CMS should be able to edit # update
     folder: "src/_docs"
     create: true
     fields:
-      - { name: "layout", label: "Standard Page or Advanced Page?", widget: "string", default: "base__homepage"}
+      - { name: "layout", label: "Standard Page or Advanced Page?", widget: "select", options:
+          - { label: "Standard page", value: "base__page_sidebar" }
+      - { label: "Advanced Page", value: "base__page" } }
       - { name: "title", label: "Title", widget: "string", default: "lorem ipsum" }
       - { name: "permalink", label: "Permalink", widget: "hidden", default: "/" }
 
