@@ -11,6 +11,9 @@ public_folder: "/assets/img/content"
 collections: # A list of collections the CMS should be able to edit # update
   - name: "settings"
     label: "Settings"
+    description: >
+          The description is a great place for tone setting, high level information, and editing
+          guidelines that are specific to a collection.
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
