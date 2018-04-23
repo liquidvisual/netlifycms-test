@@ -1,6 +1,6 @@
 ---
-layout: base__page
-title: lorem ipsum
+layout: base__page_sidebar
+title: WOZA
 permalink: /
 ---
 
